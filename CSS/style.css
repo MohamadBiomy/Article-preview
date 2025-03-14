@@ -1,0 +1,143 @@
+:root {
+  --very-dark-grayish-blue: #48556a;
+  --desaturated-dark-blue: #6d7f97;
+  --grayish-blue: #9eafc2;
+  --light-grayish-blue: #ecf2f8;
+  --regular: 500;
+  --bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-grayish-blue);
+  padding: 30px 0;
+}
+
+.container {
+  width: 300px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.image-box {
+  overflow: hidden;
+  max-height: 200px;
+}
+
+.image-box img {
+  width: 100%;
+}
+
+.content {
+  padding: 24px 20px 0;
+  background-color: white;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.one {
+  color: var(--very-dark-grayish-blue);
+  font-weight: var(--bold);
+}
+
+.two {
+  color: var(--desaturated-dark-blue);
+  margin: 10px 0 20px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 21px;
+  background-color: white;
+  width: 100%;
+}
+
+.social.active {
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.info {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  gap: 10px;
+  margin-left: -4px;
+}
+
+.info img {
+  width: 34px;
+}
+
+.info span:first-of-type {
+  display: block;
+  font-weight: var(--bold);
+  color: var(--very-dark-grayish-blue);
+}
+
+.info span:last-of-type {
+  color: var(--desaturated-dark-blue);
+}
+
+.share-btn {
+  background-color: var(--light-grayish-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.social.active .share-btn {
+  background-color: var(--desaturated-dark-blue);
+}
+
+.share-btn i {
+  color: var(--very-dark-grayish-blue);
+  margin-right: -1px;
+}
+
+.social.active .share-btn i {
+  color: var(--light-grayish-blue);
+}
+
+.links {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.links {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--grayish-blue);
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.icons {
+  color: var(--light-grayish-blue);
+  cursor: pointer;
+  font-size: 22px;
+}
